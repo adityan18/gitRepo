@@ -1,0 +1,6 @@
+git init
+git remote add origin <repo link>
+git rempte -v  // To check the acces to the repo
+git add . // Add all files to repo
+git commit -m <Commit Name>
+git push origin master
