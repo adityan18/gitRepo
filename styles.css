@@ -1,0 +1,82 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 3px solid #ddd;
+  background-color: rgb(214, 214, 214);
+}
+
+table th,
+table td {
+  text-align: center;
+  padding: 5px;
+}
+
+table tr {
+  border-bottom: 1px solid rgb(168, 168, 168);
+}
+
+table th {
+  box-shadow: 1px 2px 2px #aaaaaa;
+}
+
+.fire {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(250, 137, 9);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.grass {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(55, 230, 55);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.rock {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgba(192, 119, 11, 0.897);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.fighting {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: brown;
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.water {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(92, 168, 255);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+.steel {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: grey;
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+button {
+  padding: 4px;
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.pokeball {
+  position: relative;
+  opacity: .5;
+}
+
+.logo {
+  position: center;
+  right: 29% ;
+}

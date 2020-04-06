@@ -2,17 +2,42 @@
   <title>
     Grotle
   </title>
+
+  <head>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <div style="text-align: center;">
+    <img
+      src="Poke_IMG/pokeball.png"
+      width="150"
+      height="150"
+      class="pokeball"
+    />
+    <img src="Poke_IMG/LOGO.png" width="=300;" height="150;" class="logo" />
+  </div>
+
   <style>
-    body {
-      background-image: linear-gradient(rgb(40, 218, 40), rgb(40, 218, 40));
+    .bg {
+      background-color: rgb(40, 218, 40);
+      text-align: center;
     }
   </style>
-  <h2>Turtwig</h2>
-  <img src="Poke_IMG/grotle.png" alt="Grotle" width="300" height="250" />
-  <br />
-  <h4>STATS</h4>
+
+  <div class="bg">
+    <h2>Grotle</h2>
+    <img src="Poke_IMG/grotle.png" alt="Grotle" width="300" height="250" />
+  </div>
+
+  <div class="type">
+    <ul>
+      <h4>Types</h4>
+      <li class="grass">Grass</li>
+    </ul>
+  </div>
+
   <table width="100%" border="1">
-    <thead>
+    <thead style="background-color: rgb(40, 218, 40);">
       <th>HP</th>
       <th>Attack</th>
       <th>Defence</th>
@@ -31,7 +56,9 @@
       </tr>
     </tbody>
   </table>
+
   <br />
+
   <table width="100%" border="1">
     <thead>
       <th>PreEvo</th>
@@ -56,6 +83,7 @@
       </tr>
     </tbody>
   </table>
+
   <br />
   <button><a href="../home.html">HOME</a></button>
 </html>

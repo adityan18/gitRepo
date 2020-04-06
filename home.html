@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
   <div style="text-align: center;">
-    <img src="Poke_Stats/Poke_IMG/LOGO.png" width="=100;" height="75;" />
+    <img
+      src="Poke_Stats/Poke_IMG/pokeball.png"
+      width="150"
+      height="150"
+      class="pokeball"
+    />
+    <img
+      src="Poke_Stats/Poke_IMG/LOGO.png"
+      width="=300;"
+      height="150;"
+      class="logo"
+    />
   </div>
   <h1 style="text-align: center;">
     <b><i>POKEDEX</i></b>
@@ -9,9 +23,18 @@
 
   <body>
     <h2>4th Generation</h2>
-    <table border="1;" width="100%">
-      <thead>
-        <tr horizontal align="center">
+
+    <input
+      type="text"
+      id="Input"
+      onkeyup="myFunction()"
+      placeholder="Search for Pokemons..."
+    />
+    <p></p>
+
+    <table border="1;" width="100%" id="pokeTable">
+      <thead style="background-color: rgb(139, 138, 138);">
+        <tr>
           <th>Pokemon</th>
           <th>Type</th>
           <th>Picture</th>
@@ -19,10 +42,10 @@
         </tr>
       </thead>
 
-      <tbody horizontal align="center">
+      <tbody>
         <tr>
           <td>Turtwig</td>
-          <td style="color: green;">Grass</td>
+          <td><div class="grass">Grass</div></td>
           <td>
             <img
               src="Poke_Stats/Poke_IMG/turtwig.png"
@@ -39,7 +62,7 @@
 
         <tr>
           <td>Grotle</td>
-          <td style="color: green;">Grass</td>
+          <td><div class="grass">Grass</div></td>
           <td>
             <img
               src="Poke_Stats/Poke_IMG/grotle.png"
@@ -57,10 +80,8 @@
         <tr>
           <td>Torterra</td>
           <td>
-            <span style="color: green;">Grass</span><br /><span
-              style="color: rgba(192, 119, 11, 0.897);"
-              >Rock</span
-            >
+            <div class="grass">Grass</div>
+            <div class="rock">Rock</div>
           </td>
           <td>
             <img
@@ -78,7 +99,7 @@
 
         <tr>
           <td>Chimchar</td>
-          <td style="color: rgb(250, 137, 9);">Fire</td>
+          <td><div class="fire">Fire</div></td>
           <td>
             <img
               src="Poke_Stats/Poke_IMG/chimchar.png"
@@ -96,10 +117,8 @@
         <tr>
           <td>Monferno</td>
           <td>
-            <span style="color: rgb(250, 137, 9);">Fire</span><br /><span
-              style="color: brown;"
-              >Fighting</span
-            >
+            <div class="fire">Fire</div>
+            <div class="fighting">Fighting</div>
           </td>
           <td>
             <img
@@ -118,10 +137,8 @@
         <tr>
           <td>Infernape</td>
           <td>
-            <span style="color: rgb(250, 137, 9);">Fire</span><br /><span
-              style="color: brown;"
-              >Fighting</span
-            >
+            <div class="fire">Fire</div>
+            <div class="fighting">Fighting</div>
           </td>
           <td>
             <img
@@ -136,7 +153,85 @@
             </button>
           </td>
         </tr>
+
+        <tr>
+          <td>Piplup</td>
+          <td><div class="water">Water</div></td>
+          <td>
+            <img
+              src="Poke_Stats/Poke_IMG/piplup.png"
+              height="100"
+              width="120"
+            />
+          </td>
+          <td>
+            <button>
+              <a href="Poke_Stats/piplup.html">Click Me For STATS</a>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Prinplup</td>
+          <td><div class="water">Water</div></td>
+          <td>
+            <img
+              src="Poke_Stats/Poke_IMG/prinplup.png"
+              height="100"
+              width="120"
+            />
+          </td>
+          <td>
+            <button>
+              <a href="Poke_Stats/prinplup.html">Click Me For STATS</a>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Empoleon</td>
+          <td>
+            <div class="water">Water</div>
+            <div class="steel">Steel</div>
+          </td>
+          <td>
+            <img
+              src="Poke_Stats/Poke_IMG/empoleon.png"
+              height="100"
+              width="120"
+            />
+          </td>
+          <td>
+            <button>
+              <a href="Poke_Stats/empoleon.html">Click Me For STATS</a>
+            </button>
+          </td>
+        </tr>
       </tbody>
     </table>
+
+    <script>
+      function myFunction() {
+        // Declare variables
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("Input");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("pokeTable");
+        tr = table.getElementsByTagName("tr");
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 0; i < tr.length; i++) {
+          td = tr[i].getElementsByTagName("td")[0]; //td[0] pokemon name
+          if (td) {
+            txtValue = td.textContent || td.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }
+        }
+      }
+    </script>
   </body>
 </html>
