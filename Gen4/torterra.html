@@ -5,6 +5,7 @@
 
   <head>
     <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js"></script>
   </head>
 
   <marquee dir="left"
@@ -12,13 +13,8 @@
   >
 
   <div style="text-align: center;">
-    <img
-      src="Poke_IMG/pokeball.png"
-      width="150"
-      height="150"
-      class="pokeball"
-    />
-    <img src="Poke_IMG/LOGO.png" width="=300;" height="150;" class="logo" />
+    <img src="../img/pokeball.png" width="150" height="150" class="pokeball" />
+    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
   </div>
 
   <style>
@@ -34,7 +30,7 @@
 
   <div class="bg">
     <h2>Torterra</h2>
-    <img src="Poke_IMG/torterra.png" alt="Torterra" width="300" height="250" />
+    <img src="../img/torterra.png" alt="Torterra" width="300" height="250" />
   </div>
 
   <div>
@@ -74,8 +70,8 @@
     <tbody align="center">
       <tr>
         <td>
-          <a href="grottle.html">Grottle</a><br /><img
-            src="Poke_IMG/grotle.png"
+          <a href="grotle.html">Grottle</a><br /><img
+            src="../img/grotle.png"
             width="80"
             height="75"
           />
@@ -85,5 +81,5 @@
     </tbody>
   </table>
   <br />
-  <button><a href="../index.html">HOME</a></button>
+  <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
 </html>

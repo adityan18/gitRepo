@@ -1,10 +1,11 @@
 <html>
   <title>
-    Turtwig
+    Chimchar
   </title>
 
   <head>
     <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js"></script>
   </head>
 
   <marquee dir="left"
@@ -13,34 +14,39 @@
 
   <div style="text-align: center;">
     <img
-      src="Poke_IMG/pokeball.png"
+      src="../img/pokeball.png"
       width="150"
       height="150"
       class="pokeball"
     />
-    <img src="Poke_IMG/LOGO.png" width="=300;" height="150;" class="logo" />
+    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
   </div>
 
   <style>
     .bg {
-      background-color: rgb(40, 218, 40);
+      background-image: linear-gradient(rgb(250, 137, 9), rgb(250, 137, 9));
       text-align: center;
     }
   </style>
 
   <div class="bg">
-    <h2>Turtwig</h2>
-    <img src="Poke_IMG/turtwig.png" alt="Turtwig" width="300" height="250" />
+    <h2>Chimchar</h2>
+    <img
+      src="../img/chimchar.png"
+      alt="Chimchar"
+      width="300"
+      height="250"
+    />
   </div>
   <div class="type">
     <ul>
       <h4>Types</h4>
-      <li class="grass">Grass</li>
+      <li class="fire">Fire</li>
     </ul>
   </div>
 
   <table width="100%" border="1">
-    <thead style="background-color: rgb(40, 218, 40);">
+    <thead style="background-color: rgb(250, 137, 9);">
       <th>HP</th>
       <th>Attack</th>
       <th>Defence</th>
@@ -50,12 +56,12 @@
     </thead>
     <tbody align="center">
       <tr>
-        <td>95</td>
-        <td>109</td>
-        <td>105</td>
-        <td>56</td>
-        <td>75</td>
-        <td>85</td>
+        <td>44</td>
+        <td>58</td>
+        <td>44</td>
+        <td>61</td>
+        <td>58</td>
+        <td>44</td>
       </tr>
     </tbody>
   </table>
@@ -69,8 +75,8 @@
       <tr>
         <td>NONE</td>
         <td>
-          <a href="grottle.html">Grottle</a><br /><img
-            src="Poke_IMG/grotle.png"
+          <a href="monferno.html">Monferno</a><br /><img
+            src="../img/monferno.png"
             height="75"
             width="80"
           />
@@ -79,5 +85,5 @@
     </tbody>
   </table>
   <br />
-  <button><a href="../index.html">HOME</a></button>
+  <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
 </html>

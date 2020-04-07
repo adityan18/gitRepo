@@ -35,11 +35,27 @@ table th {
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
+.ghost{
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(176, 39, 194);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
 .rock {
   padding: 5px;
   border-radius: 5px;
   width: 90%;
   background-color: rgba(192, 119, 11, 0.897);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.flying {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgba(73, 39, 185, 0.733);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
@@ -58,11 +74,28 @@ table th {
   background-color: rgb(92, 168, 255);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
+
+.dark {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(56, 39, 20);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
 .steel {
   padding: 5px;
   border-radius: 5px;
   width: 90%;
   background-color: grey;
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.ground {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(246, 178, 67);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
@@ -73,10 +106,36 @@ button {
 
 .pokeball {
   position: relative;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .logo {
   position: center;
-  right: 29% ;
+  right: 29%;
+}
+
+.tab {
+  height: 50px;
+  overflow: hidden;
+  border: 1px solid #f1f1f1;
+  background-color: rgb(231, 229, 229);
+}
+
+.tab button {
+  background-color: inherit;
+  height: 50px;
+  width: 12.5%;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 5px 5px;
+  transition: 0.3s;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
 }

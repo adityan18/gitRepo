@@ -1,10 +1,11 @@
 <html>
   <title>
-    Prinplup
+    Swarmpert
   </title>
 
   <head>
     <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js"></script>
   </head>
 
   <marquee dir="left"
@@ -12,40 +13,30 @@
   >
 
   <div style="text-align: center;">
-    <img
-      src="Poke_IMG/pokeball.png"
-      width="150"
-      height="150"
-      class="pokeball"
-    />
-    <img
-      src="Poke_IMG/LOGO.png"
-      width="=300;"
-      height="150;"
-      class="logo"
-    />
-</div>
-  
+    <img src="../img/pokeball.png" width="150" height="150" class="pokeball" />
+    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
+  </div>
+
   <style>
     .bg {
-      background-color: rgb(92, 168, 255);
+      background-image: linear-gradient(
+        90deg,
+        rgb(92, 168, 255) 50%,
+        rgb(246, 178, 67) 50%
+      );
       text-align: center;
     }
-    </style>
+  </style>
 
   <div class="bg">
-    <h2>Prinplup</h2>
-    <img
-      src="Poke_IMG/prinplup.png"
-      alt="Prinplup"
-      width="300"
-      height="250"
-    />
+    <h2>Swarmpert</h2>
+    <img src="../img/swarmpert.png" alt="Swarmpert" width="300" height="250" />
   </div>
   <div class="type">
     <ul>
       <h4>Types</h4>
       <li class="water">Water</li>
+      <li class="ground">Ground</li>
     </ul>
   </div>
 
@@ -61,11 +52,11 @@
     <tbody align="center">
       <tr>
         <td>64</td>
-        <td>66</td>
-        <td>68</td>
-        <td>50</td>
+        <td>78</td>
+        <td>52</td>
         <td>81</td>
-        <td>76</td>
+        <td>78</td>
+        <td>52</td>
       </tr>
     </tbody>
   </table>
@@ -77,21 +68,20 @@
     </thead>
     <tbody align="center">
       <tr>
-          <td>
-            <a href="piplup.html">Piplup<br /><img
-              src="Poke_IMG/piplup.png"
-              height="75"
-              width="80"
-            />
-          </td>
-        <td><a href="empoleon.html">Empoleon<br /><img
-            src="Poke_IMG/empoleon.png"
-            height="75"
+        <td>
+          <a href="marshtomp.html">Marshtomp[NO CONTENT]</a><br /><img
+            src="../img/marshtomp.png"
             width="80"
-          /></td>
+            height="75"
+            alt="Marshtomp"
+          />
+        </td>
+        <td>
+          NONE
+        </td>
       </tr>
     </tbody>
   </table>
   <br />
-  <button><a href="../index.html">HOME</a></button>
+  <button id="Gen3" onclick="changeTabs(this.id,'r')">GEN3</button>
 </html>

@@ -1,10 +1,11 @@
 <html>
   <title>
-    Monferno
+    Charmeleon
   </title>
 
   <head>
     <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js"></script>
   </head>
 
   <marquee dir="left"
@@ -12,36 +13,30 @@
   >
 
   <div style="text-align: center;">
-    <img
-      src="Poke_IMG/pokeball.png"
-      width="150"
-      height="150"
-      class="pokeball"
-    />
-    <img
-      src="Poke_IMG/LOGO.png"
-      width="=300;"
-      height="150;"
-      class="logo"
-    />
+    <img src="../img/pokeball.png" width="150" height="150" class="pokeball" />
+    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
   </div>
 
   <style>
-    .bg{
-      background-image: linear-gradient(90deg, rgb(250, 137, 9) 50%, brown 50%);
+    .bg {
+      background-color: rgb(250, 137, 9);
       text-align: center;
     }
   </style>
 
   <div class="bg">
-    <h2>Monferno</h2>
-    <img src="Poke_IMG/monferno.png" alt="Monferno" width="300" height="250" />
+    <h2>Charmeleon</h2>
+    <img
+      src="../img/charmeleon.png"
+      alt="Charmeleon"
+      width="300"
+      height="250"
+    />
   </div>
   <div class="type">
     <ul>
       <h4>Types</h4>
       <li class="fire">Fire</li>
-      <li class="fighting">Fighting</li>
     </ul>
   </div>
 
@@ -56,12 +51,12 @@
     </thead>
     <tbody align="center">
       <tr>
+        <td>58</td>
         <td>64</td>
-        <td>78</td>
-        <td>52</td>
-        <td>81</td>
-        <td>78</td>
-        <td>52</td>
+        <td>58</td>
+        <td>80</td>
+        <td>80</td>
+        <td>65</td>
       </tr>
     </tbody>
   </table>
@@ -74,22 +69,22 @@
     <tbody align="center">
       <tr>
         <td>
-          <a href="chimchar.html">Chimchar</a><br /><img
-            src="Poke_IMG/chimchar.png"
-            width="80"
+          <a href="charmander.html">Charizard</a><br /><img
+            src="../img/charmander.png"
             height="75"
+            width="80"
           />
         </td>
         <td>
-          <a href="infernape.html">Infernape</a><br /><img
-            src="Poke_IMG/infernape.png"
-            width="80"
+          <a href="charizard.html">Charizard</a><br /><img
+            src="../img/charizard.png"
             height="75"
+            width="80"
           />
         </td>
       </tr>
     </tbody>
   </table>
   <br />
-  <button><a href="../index.html">HOME</a></button>
+  <button id="Gen1" onclick="changeTabs(this.id,'r')">GEN1</button>
 </html>

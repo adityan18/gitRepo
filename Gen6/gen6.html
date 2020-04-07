@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js"></script>
+  </head>
+  <title>
+    Generation 6
+  </title>
+  <marquee dir="left"
+    ><b><i>Website under development</i></b></marquee
+  >
+  <div style="text-align: center;">
+    <img src="../img/pokeball.png" width="150" height="150" class="pokeball" />
+    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
+  </div>
+
+  <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+    POKEDEX
+  </h1>
+
+  <div class="tab">
+    <button id="Home" onclick="changeTabs(this.id,'g')">HOME</button>
+    <button id="Gen1" onclick="changeTabs(this.id,'g')">GEN1</button>
+    <button id="Gen2" onclick="changeTabs(this.id,'g')">GEN2</button>
+    <button id="Gen3" onclick="changeTabs(this.id,'g')">GEN3</button>
+    <button id="Gen4" onclick="changeTabs(this.id,'g')">GEN4</button>
+    <button id="Gen5" onclick="changeTabs(this.id,'g')">GEN5</button>
+    <button id="Gen6">GEN6</button>
+    <button id="Gen7" onclick="changeTabs(this.id,'g')">GEN7</button>
+  </div>
+
+  <body>
+    <br />
+    <h2>6th Generation</h2>
+    <input
+      type="text"
+      id="Input"
+      onkeyup="myFunction()"
+      placeholder="Search for Pokemons..."
+      style="float: right;"
+    />
+    <p></p>
+
+    <table border="1;" width="100%" id="pokeTable">
+      <thead style="background-color: rgb(139, 138, 138);">
+        <tr>
+          <th>Pokemon</th>
+          <th>Type</th>
+          <th>Picture</th>
+          <th>Stats</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Greninja</td>
+          <td>
+            <div class="water">Water</div>
+            <div class="dark">Dark</div>
+          </td>
+          <td>
+            <img src="../img/greninja.png" height="100;" width="120;" />
+          </td>
+          <td>
+            <button>
+              <a href="greninja.html">Click Me For STATS</a>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

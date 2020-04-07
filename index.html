@@ -1,240 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
   </head>
+  <title>
+    Pokedex
+  </title>
+
   <marquee dir="left"
     ><b><i>Website under development</i></b></marquee
   >
+
   <div style="text-align: center;">
-    <img
-      src="Poke_Stats/Poke_IMG/pokeball.png"
-      width="150"
-      height="150"
-      class="pokeball"
-    />
-    <img
-      src="Poke_Stats/Poke_IMG/LOGO.png"
-      width="=300;"
-      height="150;"
-      class="logo"
-    />
+    <img src="img/pokeball.png" width="150" height="150" class="pokeball" />
+    <img src="img/LOGO.png" width="=300;" height="150;" class="logo" />
   </div>
-  <h1 style="text-align: center;">
-    <b><i>POKEDEX</i></b>
+
+  <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">
+    POKEDEX
   </h1>
 
-  <body>
-    <h2>4th Generation</h2>
+  <div class="tab">
+    <button>HOME</button>
+    <button id="Gen1" onclick="changeTabs(this.id,'h')">GEN1</button>
+    <button id="Gen2" onclick="changeTabs(this.id,'h')">GEN2</button>
+    <button id="Gen3" onclick="changeTabs(this.id,'h')">GEN3</button>
+    <button id="Gen4" onclick="changeTabs(this.id,'h')">GEN4</button>
+    <button id="Gen5" onclick="changeTabs(this.id,'h')">GEN5</button>
+    <button id="Gen6" onclick="changeTabs(this.id,'h')">GEN6</button>
+    <button id="Gen7" onclick="changeTabs(this.id,'h')">GEN7</button>
+  </div>
+  <br />
 
-    <input
-      type="text"
-      id="Input"
-      onkeyup="myFunction()"
-      placeholder="Search for Pokemons..."
-    />
-    <p></p>
+  <style>
+    .img {
+      float: left;
+      height: 25%;
+      width: 33%;
+      border-image: 2px solid black;
+      padding-right: 2;
+    }
+  </style>
 
-    <table border="1;" width="100%" id="pokeTable">
-      <thead style="background-color: rgb(139, 138, 138);">
-        <tr>
-          <th>Pokemon</th>
-          <th>Type</th>
-          <th>Picture</th>
-          <th>Stats</th>
-        </tr>
-      </thead>
+  <br />
+  <p>You can also Click on Images</p>
 
-      <tbody>
-        <tr>
-          <td>Turtwig</td>
-          <td><div class="grass">Grass</div></td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/turtwig.png"
-              height="100;"
-              width="120;"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/turtwig.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Grotle</td>
-          <td><div class="grass">Grass</div></td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/grotle.png"
-              height="100;"
-              width="120;"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/grottle.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Torterra</td>
-          <td>
-            <div class="grass">Grass</div>
-            <div class="rock">Rock</div>
-          </td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/torterra.png"
-              height="100;"
-              width="120;"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/grottle.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Chimchar</td>
-          <td><div class="fire">Fire</div></td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/chimchar.png"
-              height="100;"
-              width="120;"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/chimchar.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Monferno</td>
-          <td>
-            <div class="fire">Fire</div>
-            <div class="fighting">Fighting</div>
-          </td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/monferno.png"
-              height="100;"
-              width="120;"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/monferno.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Infernape</td>
-          <td>
-            <div class="fire">Fire</div>
-            <div class="fighting">Fighting</div>
-          </td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/infernape.png"
-              height="100;"
-              width="120;"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/infernape.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Piplup</td>
-          <td><div class="water">Water</div></td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/piplup.png"
-              height="100"
-              width="120"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/piplup.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Prinplup</td>
-          <td><div class="water">Water</div></td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/prinplup.png"
-              height="100"
-              width="120"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/prinplup.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Empoleon</td>
-          <td>
-            <div class="water">Water</div>
-            <div class="steel">Steel</div>
-          </td>
-          <td>
-            <img
-              src="Poke_Stats/Poke_IMG/empoleon.png"
-              height="100"
-              width="120"
-            />
-          </td>
-          <td>
-            <button>
-              <a href="Poke_Stats/empoleon.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
-    <script>
-      function myFunction() {
-        // Declare variables
-        var input, filter, table, tr, td, i, txtValue;
-        input = document.getElementById("Input");
-        filter = input.value.toUpperCase();
-        table = document.getElementById("pokeTable");
-        tr = table.getElementsByTagName("tr");
-
-        // Loop through all table rows, and hide those who don't match the search query
-        for (i = 0; i < tr.length; i++) {
-          td = tr[i].getElementsByTagName("td")[0]; //td[0] pokemon name
-          if (td) {
-            txtValue = td.textContent || td.innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              tr[i].style.display = "";
-            } else {
-              tr[i].style.display = "none";
-            }
-          }
-        }
-      }
-    </script>
-  </body>
+  <div>
+    <a href="Gen1/gen1.html"><img src="img/gen1.png" class="img" /></a>
+    <a href="Gen2/gen2.html"><img src="img/gen2.png" class="img" /></a>
+    <a href="Gen3/gen3.html"><img src="img/gen3.jpg" class="img" /></a>
+    <br />
+    <a href="Gen4/gen4.html"><img src="img/gen4.jpg" class="img" /></a>
+    <a href="Gen5/gen5.html"><img src="img/gen5.jpg" class="img" /></a>
+    <a href="Gen6/gen6.html"><img src="img/gen6.jpg" class="img" /></a>
+    <a href="Gen7/gen7.html"><img src="img/gen7.jpg" class="img" /></a>
+  </div>
 </html>

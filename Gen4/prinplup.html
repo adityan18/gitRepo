@@ -1,10 +1,11 @@
 <html>
   <title>
-    Chimchar
+    Prinplup
   </title>
 
   <head>
     <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js"></script>
   </head>
 
   <marquee dir="left"
@@ -13,26 +14,31 @@
 
   <div style="text-align: center;">
     <img
-      src="Poke_IMG/pokeball.png"
+      src="../img/pokeball.png"
       width="150"
       height="150"
       class="pokeball"
     />
-    <img src="Poke_IMG/LOGO.png" width="=300;" height="150;" class="logo" />
-  </div>
-
+    <img
+      src="../img/LOGO.png"
+      width="=300;"
+      height="150;"
+      class="logo"
+    />
+</div>
+  
   <style>
     .bg {
-      background-image: linear-gradient(rgb(250, 137, 9), rgb(250, 137, 9));
+      background-color: rgb(92, 168, 255);
       text-align: center;
     }
-  </style>
+    </style>
 
   <div class="bg">
-    <h2>Chimchar</h2>
+    <h2>Prinplup</h2>
     <img
-      src="Poke_IMG/chimchar.png"
-      alt="Chimchar"
+      src="../img/prinplup.png"
+      alt="Prinplup"
       width="300"
       height="250"
     />
@@ -40,12 +46,12 @@
   <div class="type">
     <ul>
       <h4>Types</h4>
-      <li class="fire">Fire</li>
+      <li class="water">Water</li>
     </ul>
   </div>
 
   <table width="100%" border="1">
-    <thead style="background-color: rgb(250, 137, 9);">
+    <thead style="background-color: rgb(92, 168, 255);">
       <th>HP</th>
       <th>Attack</th>
       <th>Defence</th>
@@ -55,12 +61,12 @@
     </thead>
     <tbody align="center">
       <tr>
-        <td>44</td>
-        <td>58</td>
-        <td>44</td>
-        <td>61</td>
-        <td>58</td>
-        <td>44</td>
+        <td>64</td>
+        <td>66</td>
+        <td>68</td>
+        <td>50</td>
+        <td>81</td>
+        <td>76</td>
       </tr>
     </tbody>
   </table>
@@ -72,17 +78,21 @@
     </thead>
     <tbody align="center">
       <tr>
-        <td>NONE</td>
-        <td>
-          <a href="monferno.html">Monferno</a><br /><img
-            src="Poke_IMG/monferno.png"
+          <td>
+            <a href="piplup.html">Piplup<br /><img
+              src="../img/piplup.png"
+              height="75"
+              width="80"
+            />
+          </td>
+        <td><a href="empoleon.html">Empoleon<br /><img
+            src="../img/empoleon.png"
             height="75"
             width="80"
-          />
-        </td>
+          /></td>
       </tr>
     </tbody>
   </table>
   <br />
-  <button><a href="../index.html">HOME</a></button>
+  <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
 </html>
