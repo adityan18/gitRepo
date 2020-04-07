@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(134, 91, 12);
+}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -35,7 +39,7 @@ table th {
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
-.ghost{
+.ghost {
   padding: 5px;
   border-radius: 5px;
   width: 90%;
@@ -116,12 +120,14 @@ button {
 
 .tab {
   height: 50px;
+  position: sticky;
+  top: 0;
   overflow: hidden;
-  border: 1px solid #f1f1f1;
-  background-color: rgb(231, 229, 229);
+  background-color: rgb(36, 35, 35);
 }
 
 .tab button {
+  color: white;
   background-color: inherit;
   height: 50px;
   width: 12.5%;
@@ -130,12 +136,40 @@ button {
   outline: none;
   padding: 5px 5px;
   transition: 0.3s;
+  box-shadow: 0 0 0;
 }
 
 .tab button:hover {
-  background-color: #ddd;
+  background-color: rgb(0, 0, 0);
 }
 
 .tab button.active {
-  background-color: #ccc;
+  background-color: rgb(37, 200, 37);
+}
+
+.drop button:hover .sub {
+  float: left;
+  background-color: inherit;
+  color: white;
+}
+
+.sub {
+  display: none;
+}
+
+.sub button {
+  color: white;
+  background-color: inherit;
+  height: 50px;
+  width: 11.5%;
+  float: left;
+  border: none;
+  outline: none;
+  padding: 5px 5px;
+  transition: 0.3s;
+  box-shadow: 0 0 0;
+}
+.drop button:hover .sub {
+  background-color: rgb(0, 0, 0);
+  display: block;
 }
