@@ -3,17 +3,14 @@ function changeTabs(buttonId, c) {
   var f2 = f1.toLowerCase();
   var loc = f1 + "/" + f2 + ".html";
 
-  if (c == "g") {
-    loc = "../" + f1 + "/" + f2 + ".html";
-  }
-
-  if (c == "r") {
-    loc = f1.toLowerCase() + ".html";
-  }
-  
   if (f1 == "Home") {
     loc = "../index.html";
+  } else if (c == "g") {
+    loc = "../" + f1 + "/" + f2 + ".html";
+  } else if (c == "r") {
+    loc = f1.toLowerCase() + ".html";
   }
+
   location.replace(loc);
 }
 

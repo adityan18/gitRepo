@@ -19,15 +19,23 @@
     POKEDEX
   </h1>
 
-  <div class="tab">
-    <button id="Home" onclick="changeTabs(this.id,'g')">HOME</button>
-    <button id="Gen1" onclick="changeTabs(this.id,'g')">GEN1</button>
-    <button id="Gen2" onclick="changeTabs(this.id,'g')">GEN2</button>
-    <button id="Gen3" onclick="changeTabs(this.id,'g')">GEN3</button>
-    <button id="Gen4" onclick="changeTabs(this.id,'g')">GEN4</button>
-    <button id="Gen5" onclick="changeTabs(this.id,'g')">GEN5</button>
-    <button id="Gen6" onclick="changeTabs(this.id,'g')">GEN6</button>
-    <button id="Gen7" class="active">GEN7</button>
+  <div class="navbar">
+    <a href="#home" id="Home" onclick="changeTabs(this.id,'g')">Home</a>
+    <div class="dropdown">
+      <button class="dropbtn">
+        Generations
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a id="Gen1" onclick="changeTabs(this.id,'g')" href="#">Gen1</a>
+        <a id="Gen2" onclick="changeTabs(this.id,'g')" href="#">Gen2</a>
+        <a id="Gen3" onclick="changeTabs(this.id,'g')" href="#">Gen3</a>
+        <a id="Gen4" onclick="changeTabs(this.id,'g')" href="#">Gen4</a>
+        <a id="Gen5" onclick="changeTabs(this.id,'g')" href="#">Gen5</a>
+        <a id="Gen6" onclick="changeTabs(this.id,'g')" href="#">Gen6</a>
+        <a id="Gen7" class="active" href="#">Gen7</a>
+      </div>
+    </div>
   </div>
 
   <body>
