@@ -26,8 +26,54 @@
     "navbar navbar"
     "header search"
     "table table";
-  grid-gap: 2px;
-  /*background-color: #2196f3;*/
   padding: 2px;
   margin: 10px;
+}
+
+.box1 {
+  grid-area: navbar;
+}
+
+.box2 {
+  grid-area: intro;
+  margin-left: 15px;
+  justify-self: center;
+  padding: 10px;
+  color: white;
+}
+.box2 img{
+  align-self: center;
+}
+
+.box3 {
+  grid-area: pic;
+  margin-right: 15px;
+  align-self: center;
+}
+
+.box4 {
+  grid-area: merch;
+  position: relative;
+  margin-right: 15px;
+  align-self: center;
+}
+
+.text a{
+  color: white;
+  font-size: 20;
+  list-style:none;
+}
+.home-container {
+  display: grid;
+  grid-template-areas:
+    "navbar navbar"
+    "intro pic"
+    "intro merch"
+    "mtext mtext";
+  margin: 10px;
+  grid-gap: 20px;
+}
+
+.home-container > div {
+  border: 5px white;
 }

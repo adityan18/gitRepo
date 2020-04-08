@@ -1,6 +1,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/style_grid.css" />
     <script src="js/script.js"></script>
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -12,11 +13,10 @@
   <marquee dir="left" class="type"
     ><b><i>Website under development</i></b></marquee
   >
-  
+
   <title>
     Pokedex
   </title>
-
 
   <div style="text-align: center;">
     <img src="img/pokeball.png" width="150" height="150" class="pokeball" />
@@ -30,48 +30,68 @@
     POKEDEX
   </h1>
 
-  <div class="navbar">
-    <a class="active" href="#home">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">
-        Generations
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a id="Gen1" onclick="changeTabs(this.id,'h')" href="#">Gen1</a>
-        <a id="Gen2" onclick="changeTabs(this.id,'h')" href="#">Gen2</a>
-        <a id="Gen3" onclick="changeTabs(this.id,'h')" href="#">Gen3</a>
-        <a id="Gen4" onclick="changeTabs(this.id,'h')" href="#">Gen4</a>
-        <a id="Gen5" onclick="changeTabs(this.id,'h')" href="#">Gen5</a>
-        <a id="Gen6" onclick="changeTabs(this.id,'h')" href="#">Gen6</a>
-        <a id="Gen7" onclick="changeTabs(this.id,'h')" href="#">Gen7</a>
+  <body>
+    <div class="home-container">
+      <div class="box1">
+        <div class="navbar">
+          <a class="active" href="#home">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Generations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a id="Gen1" onclick="changeTabs(this.id,'h')" href="#">Gen1</a>
+              <a id="Gen2" onclick="changeTabs(this.id,'h')" href="#">Gen2</a>
+              <a id="Gen3" onclick="changeTabs(this.id,'h')" href="#">Gen3</a>
+              <a id="Gen4" onclick="changeTabs(this.id,'h')" href="#">Gen4</a>
+              <a id="Gen5" onclick="changeTabs(this.id,'h')" href="#">Gen5</a>
+              <a id="Gen6" onclick="changeTabs(this.id,'h')" href="#">Gen6</a>
+              <a id="Gen7" onclick="changeTabs(this.id,'h')" href="#">Gen7</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box2">
+        <h3>The World of Pokemon</h3>
+        <p style="text-align: justify;">
+          Pokémon also known as Pocket Monsters[b] in Japan, is a Japanese media
+          franchise managed by the Pokémon Company, a company founded and with
+          shares divided between Nintendo, Game Freak, and Creatures. The
+          franchise copyright and Japanese trademark is shared by all three
+          companies, but Nintendo is the sole owner of the trademark in other
+          countries. The franchise was created by Satoshi Tajiri in 1995, and is
+          centered on fictional creatures called "Pokémon", which humans, known
+          as Pokémon Trainers, catch and train to battle each other for sport.
+          The English slogan for the franchise is "Gotta Catch 'Em All". Works
+          within the franchise are set in the Pokémon universe.
+        </p>
+        <div style="text-align: center;">
+          <img src="img/ash.png" style="height: 300; width: 200;" />
+        </div>
+      </div>
+      <div class="box3">
+        <img src="img/poke-pic.png" alt="PIC" style="width: 400px;" />
+      </div>
+      <div class="box4">
+        <a
+          href="https://www.amazon.in/s?k=pokemon+merchandise&ref=nb_sb_noss"
+          target="_blank"
+        >
+          <img
+            src="img/merch.jpeg"
+            alt="Merchandise"
+            style="width: 400px; height: 250px;"
+          />
+        </a>
+        <div class="text" style="text-align: center;">
+          <a
+            href="https://www.amazon.in/s?k=pokemon+merchandise&ref=nb_sb_noss"
+            target="_blank"
+            >Buy Merch Here!!!!</a
+          >
+        </div>
       </div>
     </div>
-    <a class="">MyName</a>
-  </div>
-  <br />
-
-  <style>
-    .img {
-      float: left;
-      height: 25%;
-      width: 33%;
-      border-image: 2px solid black;
-      padding-right: 2;
-    }
-  </style>
-
-  <br />
-  <p>You can also Click on Images</p>
-
-  <div>
-    <a href="Gen1/gen1.html"><img src="img/gen1.png" class="img" /></a>
-    <a href="Gen2/gen2.html"><img src="img/gen2.png" class="img" /></a>
-    <a href="Gen3/gen3.html"><img src="img/gen3.jpg" class="img" /></a>
-    <br />
-    <a href="Gen4/gen4.html"><img src="img/gen4.jpg" class="img" /></a>
-    <a href="Gen5/gen5.html"><img src="img/gen5.jpg" class="img" /></a>
-    <a href="Gen6/gen6.html"><img src="img/gen6.jpg" class="img" /></a>
-    <a href="Gen7/gen7.html"><img src="img/gen7.jpg" class="img" /></a>
-  </div>
+  </body>
 </html>

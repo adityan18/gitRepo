@@ -110,7 +110,7 @@ table th {
   padding: 5px;
   border-radius: 5px;
   width: 90%;
-  background-color: rgb(56, 39, 20);
+  background-color: rgb(77, 53, 25);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
@@ -178,7 +178,7 @@ button {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: darkblue
+  background-color: rgb(1, 1, 7)
 }
 
 .dropdown-content {
@@ -205,4 +205,8 @@ button {
 
 .dropdown:hover .dropdown-content {
   display: table;
+}
+
+.active{
+  background-color: darkblue
 }
