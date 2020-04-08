@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style_grid.css" />
     <script src="../js/script.js"></script>
     <link
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -13,7 +14,7 @@
   <title>
     Generation 3
   </title>
-  <marquee dir="left" 
+  <marquee dir="left"
     ><b><i>Website under development</i></b></marquee
   >
   <div style="text-align: center;">
@@ -21,68 +22,74 @@
     <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
   </div>
 
-  <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;" >
+  <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">
     POKEDEX
   </h1>
 
-  <div class="navbar">
-    <a href="#home" id="Home" onclick="changeTabs(this.id,'g')">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">
-        Generations
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a id="Gen1" onclick="changeTabs(this.id,'g')" href="#">Gen1</a>
-        <a id="Gen2" onclick="changeTabs(this.id,'g')" href="#">Gen2</a>
-        <a id="Gen3" class="active" href="#">Gen3</a>
-        <a id="Gen4" onclick="changeTabs(this.id,'g')" href="#">Gen4</a>
-        <a id="Gen5" onclick="changeTabs(this.id,'g')" href="#">Gen5</a>
-        <a id="Gen6" onclick="changeTabs(this.id,'g')" href="#">Gen6</a>
-        <a id="Gen7" onclick="changeTabs(this.id,'g')" href="#">Gen7</a>
+  <body>
+    <div class="grid-container">
+      <div class="item1">
+        <div class="navbar">
+          <a href="#home" id="Home" onclick="changeTabs(this.id,'g')">Home</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              Generations
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a id="Gen1" onclick="changeTabs(this.id,'g')" href="#">Gen1</a>
+              <a id="Gen2" onclick="changeTabs(this.id,'g')" href="#">Gen2</a>
+              <a id="Gen3" class="active" href="#">Gen3</a>
+              <a id="Gen4" onclick="changeTabs(this.id,'g')" href="#">Gen4</a>
+              <a id="Gen5" onclick="changeTabs(this.id,'g')" href="#">Gen5</a>
+              <a id="Gen6" onclick="changeTabs(this.id,'g')" href="#">Gen6</a>
+              <a id="Gen7" onclick="changeTabs(this.id,'g')" href="#">Gen7</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item2">
+        <h2>3rd Generation</h2>
+      </div>
+      <div class="item3">
+        <input
+          type="text"
+          id="Input"
+          onkeyup="myFunction()"
+          placeholder="Search for Pokemons..."
+        />
+      </div>
+      <div class="item4">
+        <table border="1;" width="100%" id="pokeTable">
+          <thead style="background-color: rgb(139, 138, 138);">
+            <tr>
+              <th>Pokemon</th>
+              <th>Type</th>
+              <th>Picture</th>
+              <th>Stats</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Swampert</td>
+              <td>
+                <div class="water">Water</div>
+                <div class="ground">Ground</div>
+              </td>
+              <td>
+                <img src="../img/swarmpert.png" height="100;" width="120;" />
+              </td>
+              <td>
+                <button>
+                  <a href="swarmpert.html">Click Me For STATS</a>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
-
-  <body>
-    <br />
-    <h2>3rd Generation</h2>
-    <input
-      type="text"
-      id="Input"
-      onkeyup="myFunction()"
-      placeholder="Search for Pokemons..."
-      style="float: right;"
-    />
-    <p></p>
-
-    <table border="1;" width="100%" id="pokeTable">
-      <thead style="background-color: rgb(139, 138, 138);">
-        <tr>
-          <th>Pokemon</th>
-          <th>Type</th>
-          <th>Picture</th>
-          <th>Stats</th>
-        </tr>
-      </thead>
-
-      <tbody>
-        <tr>
-          <td>Swampert</td>
-          <td>
-            <div class="water">Water</div>
-            <div class="ground">Ground</div>
-          </td>
-          <td>
-            <img src="../img/swarmpert.png" height="100;" width="120;" />
-          </td>
-          <td>
-            <button>
-              <a href="swarmpert.html">Click Me For STATS</a>
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    >
   </body>
 </html>

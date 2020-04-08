@@ -7,8 +7,13 @@ body h2,
 marquee {
   color: white;
 }
+
 .type ul {
   list-style-type: none;
+}
+
+body input {
+  position: relative;
 }
 
 .type ul li {
@@ -142,7 +147,7 @@ button {
 
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgba(5, 1, 5, 0.548);
   top: 0;
 }
 
@@ -173,7 +178,7 @@ button {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: rgb(223, 199, 199);
+  background-color: darkblue
 }
 
 .dropdown-content {
