@@ -6,7 +6,11 @@ body {
 .popup-cont {
   margin: 50px;
   padding: 20;
-  background: url(../img/bg.jpg);
+  background-image: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 #pop-up {
@@ -38,8 +42,8 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   position: absolute;
-  top: 3px;
-  right: 75px;
+  top: 2px;
+  right: 52px;
 }
 
 .bg {
