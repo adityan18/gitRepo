@@ -1,5 +1,5 @@
 body {
-  background-image: url(../img/bg.jpg);
+  background: url(../img/bg.jpg);
 }
 
 h1,
@@ -178,7 +178,7 @@ button {
 
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: rgb(1, 1, 7)
+  background-color: rgb(1, 1, 7);
 }
 
 .dropdown-content {
@@ -207,14 +207,14 @@ button {
   display: table;
 }
 
-.active{
-  background-color: darkblue
+.active {
+  background-color: darkblue;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-.navbar .fa{
+.navbar .fa {
   margin-left: 5px;
 }
