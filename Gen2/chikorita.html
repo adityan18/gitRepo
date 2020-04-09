@@ -5,76 +5,82 @@
 
   <head>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style-popup.css" />
     <script src="../js/script.js"></script>
   </head>
 
   <marquee dir="left"
     ><b><i>Website under development</i></b></marquee
   >
+  <body class="pop-up">
+    <div id="pop-up">
+      <div class="popup-cont">
+        <style>
+          .bg {
+            background-color: rgb(55, 230, 55);
+            text-align: center;
+          }
+        </style>
 
-  <div style="text-align: center;">
-    <img src="../img/pokeball.png" width="150" height="150" class="pokeball" />
-    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
-  </div>
-
-  <style>
-    .bg {
-      background-color: rgb(55, 230, 55);
-      text-align: center;
-    }
-  </style>
-
-  <div class="bg">
-    <h2>Chikorita</h2>
-    <img src="../img/chikorita.png" alt="Chikorita" width="300" height="250" />
-  </div>
-  <div class="type">
-    <ul>
-      <h4>Types</h4>
-      <li class="grass">Grass</li>
-    </ul>
-  </div>
-
-  <table width="100%" border="1">
-    <thead style="background-color: rgb(55, 230, 55);">
-      <th>HP</th>
-      <th>Attack</th>
-      <th>Defence</th>
-      <th>Speed</th>
-      <th>Sp Atk</th>
-      <th>Sp Def</th>
-    </thead>
-    <tbody align="center">
-      <tr>
-        <td>39</td>
-        <td>52</td>
-        <td>43</td>
-        <td>65</td>
-        <td>60</td>
-        <td>50</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <table width="100%" border="1">
-    <thead>
-      <th>PreEvo</th>
-      <th>NextEvo</th>
-    </thead>
-    <tbody align="center">
-      <tr>
-        <td>NONE</td>
-        <td>
-          <a href="bayleaf.html">Bayleaf(NO CONTENT)</a><br /><img
-            src="../img/bayleaf.png"
-            height="75"
-            width="80"
-            alt="Bayleaf"
+        <div class="bg">
+          <h2>Chikorita</h2>
+          <img
+            src="../img/chikorita.png"
+            alt="Chikorita"
+            width="300"
+            height="250"
           />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <button id="Gen2" onclick="changeTabs(this.id,'r')">GEN2</button>
+        </div>
+        <div class="type">
+          <ul>
+            <h4>Types</h4>
+            <li class="grass">Grass</li>
+          </ul>
+        </div>
+
+        <table width="100%" border="1">
+          <thead style="background-color: rgb(55, 230, 55);">
+            <th>HP</th>
+            <th>Attack</th>
+            <th>Defence</th>
+            <th>Speed</th>
+            <th>Sp Atk</th>
+            <th>Sp Def</th>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>39</td>
+              <td>52</td>
+              <td>43</td>
+              <td>65</td>
+              <td>60</td>
+              <td>50</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table width="100%" border="1">
+          <thead>
+            <th>PreEvo</th>
+            <th>NextEvo</th>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>NONE</td>
+              <td>
+                <a href="bayleaf.html">Bayleaf(NO CONTENT)</a><br /><img
+                  src="../img/bayleaf.png"
+                  height="75"
+                  width="80"
+                  alt="Bayleaf"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <button id="Gen2" onclick="changeTabs(this.id,'r')">GEN2</button>
+      </div>
+    </div>
+  </body>
 </html>

@@ -5,6 +5,7 @@
 
   <head>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style-popup.css">
     <script src="../js/script.js"></script>
   </head>
 
@@ -12,78 +13,77 @@
     ><b><i>Website under development</i></b></marquee
   >
 
-  <div style="text-align: center;">
-    <img
-      src="../img/pokeball.png"
-      width="150"
-      height="150"
-      class="pokeball"
-    />
-    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
-  </div>
+  <body class="pop-up">
+    <div id="pop-up">
+      <div class="popup-cont">
+        <style>
+          .bg {
+            background-image: linear-gradient(
+              rgb(250, 137, 9),
+              rgb(250, 137, 9)
+            );
+            text-align: center;
+          }
+        </style>
 
-  <style>
-    .bg {
-      background-image: linear-gradient(rgb(250, 137, 9), rgb(250, 137, 9));
-      text-align: center;
-    }
-  </style>
-
-  <div class="bg">
-    <h2>Chimchar</h2>
-    <img
-      src="../img/chimchar.png"
-      alt="Chimchar"
-      width="300"
-      height="250"
-    />
-  </div>
-  <div class="type">
-    <ul>
-      <h4>Types</h4>
-      <li class="fire">Fire</li>
-    </ul>
-  </div>
-
-  <table width="100%" border="1">
-    <thead style="background-color: rgb(250, 137, 9);">
-      <th>HP</th>
-      <th>Attack</th>
-      <th>Defence</th>
-      <th>Speed</th>
-      <th>Sp Atk</th>
-      <th>Sp Def</th>
-    </thead>
-    <tbody align="center">
-      <tr>
-        <td>44</td>
-        <td>58</td>
-        <td>44</td>
-        <td>61</td>
-        <td>58</td>
-        <td>44</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <table width="100%" border="1">
-    <thead>
-      <th>PreEvo</th>
-      <th>NextEvo</th>
-    </thead>
-    <tbody align="center">
-      <tr>
-        <td>NONE</td>
-        <td>
-          <a href="monferno.html">Monferno</a><br /><img
-            src="../img/monferno.png"
-            height="75"
-            width="80"
+        <div class="bg">
+          <h2>Chimchar</h2>
+          <img
+            src="../img/chimchar.png"
+            alt="Chimchar"
+            width="300"
+            height="250"
           />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
+        </div>
+        <div class="type">
+          <ul>
+            <h4>Types</h4>
+            <li class="fire">Fire</li>
+          </ul>
+        </div>
+
+        <table width="100%" border="1">
+          <thead style="background-color: rgb(250, 137, 9);">
+            <th>HP</th>
+            <th>Attack</th>
+            <th>Defence</th>
+            <th>Speed</th>
+            <th>Sp Atk</th>
+            <th>Sp Def</th>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>44</td>
+              <td>58</td>
+              <td>44</td>
+              <td>61</td>
+              <td>58</td>
+              <td>44</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table width="100%" border="1">
+          <thead>
+            <th>PreEvo</th>
+            <th>NextEvo</th>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>NONE</td>
+              <td>
+                <a href="monferno.html">Monferno</a><br /><img
+                  src="../img/monferno.png"
+                  height="75"
+                  width="80"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
+      </div>
+    </div>
+  </body>
 </html>

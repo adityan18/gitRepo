@@ -6,75 +6,85 @@
   <head>
     <link rel="stylesheet" href="../css/styles.css" />
     <script src="../js/script.js"></script>
+    <link rel="stylesheet" href="../css/style-popup.css">
   </head>
 
   <marquee dir="left"
     ><b><i>Website under development</i></b></marquee
   >
+  <body class="pop-up">
+    <div id="pop-up">
+      <div class="popup-cont">
+        <style>
+          .bg {
+            background-image: linear-gradient(
+              90deg,
+              rgb(250, 137, 9) 50%,
+              brown 50%
+            );
+            text-align: center;
+          }
+        </style>
 
-  <div style="text-align: center;">
-    <img src="../img/pokeball.png" width="150" height="150" class="pokeball" />
-    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
-  </div>
-
-  <style>
-    .bg {
-      background-image: linear-gradient(90deg, rgb(250, 137, 9) 50%, brown 50%);
-      text-align: center;
-    }
-  </style>
-
-  <div class="bg">
-    <h2>Infernape</h2>
-    <img src="../img/infernape.png" alt="Infernape" width="300" height="250" />
-  </div>
-  <div class="type">
-    <ul>
-      <h4>Types</h4>
-      <li class="fire">Fire</li>
-      <li class="fighting">Fighting</li>
-    </ul>
-  </div>
-
-  <table width="100%" border="1">
-    <thead style="background-color: rgb(250, 137, 9);">
-      <th>HP</th>
-      <th>Attack</th>
-      <th>Defence</th>
-      <th>Speed</th>
-      <th>Sp Atk</th>
-      <th>Sp Def</th>
-    </thead>
-    <tbody align="center">
-      <tr>
-        <td>76</td>
-        <td>104</td>
-        <td>71</td>
-        <td>108</td>
-        <td>104</td>
-        <td>71</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <table width="100%" border="1">
-    <thead>
-      <th>PreEvo</th>
-      <th>NextEvo</th>
-    </thead>
-    <tbody align="center">
-      <tr>
-        <td>
-          <a href="monferno.html">Monferno</a><br /><img
-            src="../img/monferno.png"
-            width="80"
-            height="75"
+        <div class="bg">
+          <h2>Infernape</h2>
+          <img
+            src="../img/infernape.png"
+            alt="Infernape"
+            width="300"
+            height="250"
           />
-        </td>
-        <td>NONE</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
+        </div>
+        <div class="type">
+          <ul>
+            <h4>Types</h4>
+            <li class="fire">Fire</li>
+            <li class="fighting">Fighting</li>
+          </ul>
+        </div>
+
+        <table width="100%" border="1">
+          <thead style="background-color: rgb(250, 137, 9);">
+            <th>HP</th>
+            <th>Attack</th>
+            <th>Defence</th>
+            <th>Speed</th>
+            <th>Sp Atk</th>
+            <th>Sp Def</th>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>76</td>
+              <td>104</td>
+              <td>71</td>
+              <td>108</td>
+              <td>104</td>
+              <td>71</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table width="100%" border="1">
+          <thead>
+            <th>PreEvo</th>
+            <th>NextEvo</th>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>
+                <a href="monferno.html">Monferno</a><br /><img
+                  src="../img/monferno.png"
+                  width="80"
+                  height="75"
+                />
+              </td>
+              <td>NONE</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
+      </div>
+    </div>
+  </body>
 </html>

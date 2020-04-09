@@ -210,3 +210,11 @@ button {
 .active{
   background-color: darkblue
 }
+
+a{
+  text-decoration: none;
+}
+
+.navbar .fa{
+  margin-left: 5px;
+}

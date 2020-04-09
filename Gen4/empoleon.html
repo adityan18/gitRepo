@@ -5,6 +5,7 @@
 
   <head>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style-popup.css" />
     <script src="../js/script.js"></script>
   </head>
 
@@ -12,73 +13,78 @@
     ><b><i>Website under development</i></b></marquee
   >
 
-  <div style="text-align: center;">
-    <img
-      src="../img/pokeball.png"
-      width="150"
-      height="150"
-      class="pokeball"
-    />
-    <img src="../img/LOGO.png" width="=300;" height="150;" class="logo" />
-  </div>
+  <body class="pop-up">
+    <div id="pop-up">
+      <div class="popup-cont">
+        <style>
+          .bg {
+            background-image: linear-gradient(
+              90deg,
+              rgb(92, 168, 255) 50%,
+              grey 50%
+            );
+            text-align: center;
+          }
+        </style>
 
-  <style>
-    .bg {
-      background-image: linear-gradient(90deg, rgb(92, 168, 255) 50%, grey 50%);
-      text-align: center;
-    }
-  </style>
-
-  <div class="bg">
-    <h2>Empoleon</h2>
-    <img src="../img/empoleon.png" alt="Empoleon" width="300" height="250" />
-  </div>
-  <div class="type">
-    <ul>
-      <h4>Types</h4>
-      <li class="water">Water</li>
-      <li class="steel">Steel</li>
-    </ul>
-  </div>
-  <table width="100%" border="1">
-    <thead style="background-color: rgb(92, 168, 255);">
-      <th>HP</th>
-      <th>Attack</th>
-      <th>Defence</th>
-      <th>Speed</th>
-      <th>Sp Atk</th>
-      <th>Sp Def</th>
-    </thead>
-    <tbody align="center">
-      <tr>
-        <td>84</td>
-        <td>86</td>
-        <td>88</td>
-        <td>60</td>
-        <td>111</td>
-        <td>101</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <table width="100%" border="1">
-    <thead>
-      <th>PreEvo</th>
-      <th>NextEvo</th>
-    </thead>
-    <tbody align="center">
-      <tr>
-        <td>
-          <a href="prinplup.html">Prinplup</a><br /><img
-            src="../img/prinplup.png"
-            width="80"
-            height="75"
+        <div class="bg">
+          <h2>Empoleon</h2>
+          <img
+            src="../img/empoleon.png"
+            alt="Empoleon"
+            width="300"
+            height="250"
           />
-        </td>
-        <td>NONE</td>
-      </tr>
-    </tbody>
-  </table>
-  <br />
-  <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
+        </div>
+        <div class="type">
+          <ul>
+            <h4>Types</h4>
+            <li class="water">Water</li>
+            <li class="steel">Steel</li>
+          </ul>
+        </div>
+        <table width="100%" border="1">
+          <thead style="background-color: rgb(92, 168, 255);">
+            <th>HP</th>
+            <th>Attack</th>
+            <th>Defence</th>
+            <th>Speed</th>
+            <th>Sp Atk</th>
+            <th>Sp Def</th>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>84</td>
+              <td>86</td>
+              <td>88</td>
+              <td>60</td>
+              <td>111</td>
+              <td>101</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <table width="100%" border="1">
+          <thead>
+            <th>PreEvo</th>
+            <th>NextEvo</th>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>
+                <a href="prinplup.html">Prinplup</a><br /><img
+                  src="../img/prinplup.png"
+                  width="80"
+                  height="75"
+                />
+              </td>
+              <td>NONE</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <button id="Gen4" onclick="changeTabs(this.id,'r')">GEN4</button>
+      </div>
+    </div>
+  </body>
 </html>
