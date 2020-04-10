@@ -48,8 +48,10 @@
 
 .box3 {
   grid-area: pic;
-  margin-right: 15px;
+  margin-right: auto;
   align-self: center;
+  margin-left: auto;
+
 }
 
 .box4 {
