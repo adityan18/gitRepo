@@ -34,7 +34,8 @@
     <div class="home-container">
       <div class="box1">
         <div class="navbar">
-          <a class="active" href="#home">Home
+          <a class="active" href="#home"
+            >Home
             <i class="fa fa-home"></i>
           </a>
           <div class="dropdown">
@@ -80,11 +81,7 @@
           href="https://www.amazon.in/s?k=pokemon+merchandise&ref=nb_sb_noss"
           target="_blank"
         >
-          <img
-            src="img/merch.jpeg"
-            alt="Merchandise"
-            style="width: 400px; height: 250px;"
-          />
+          <img name="slide" style="width: 400px; height: 250px;" />
         </a>
         <div class="text" style="text-align: center;">
           <a
@@ -95,5 +92,27 @@
         </div>
       </div>
     </div>
+    <script>
+      var i = 0;
+      var images = [];
+      var time = 1500;
+
+      images[0] = "../img/merch.jpeg";
+      images[1] = "../img/merch2.jpg";
+      images[2] = "../img/merch3.jpg";
+      images[3] = "../img/merch4.jpg";
+
+      function imageChange() {
+        document.slide.src = images[i];
+
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+        setTimeout("imageChange()", time);
+      }
+      window.onload = imageChange;
+    </script>
   </body>
 </html>
