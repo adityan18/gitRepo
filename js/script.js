@@ -1,14 +1,18 @@
 function changeTabs(buttonId, c) {
   var f1 = buttonId;
   var f2 = f1.toLowerCase();
-  var loc = f1 + "/" + f2 + ".html";
+  var loc;
 
   if (f1 == "Home") {
     loc = "../index.html";
+  } else if (c == "h") {
+    loc = f1 + "/" + f2 + ".html";
   } else if (c == "g") {
     loc = "../" + f1 + "/" + f2 + ".html";
   } else if (c == "r") {
     loc = f1.toLowerCase() + ".html";
+  } else if (c == "ga") {
+    loc = "../" + f1 + "/" + f2 + ".html";
   }
 
   location.replace(loc);

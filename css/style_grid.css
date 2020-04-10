@@ -42,16 +42,14 @@
   color: white;
   font-size: 20px;
 }
-.box2 img{
+.box2 img {
   align-self: center;
 }
 
 .box3 {
   grid-area: pic;
-  margin-right: auto;
+  margin-right: 15px;
   align-self: center;
-  margin-left: auto;
-
 }
 
 .box4 {
@@ -60,20 +58,25 @@
   margin-right: 15px;
   align-self: center;
 }
+.box4:hover {
+  box-shadow: 2px 2px 10px white;
+}
 
-.text a{
+.text a {
   color: white;
   font-size: 20;
-  list-style:none;
+  list-style: none;
 }
 .home-container {
   display: grid;
+  margin-top: 60px;
   grid-template-areas:
     "navbar navbar"
     "intro pic"
     "intro merch"
     "mtext mtext";
-  margin: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
   grid-gap: 20px;
 }
 
@@ -81,8 +84,106 @@
   border: 5px white;
 }
 
-@media only screen and(max-width:500px){
-  .box2{
-    font-size: 10px;
-  }
+.g1 {
+  grid-area: navbar;
+  margin-bottom: 20px;
+}
+
+.g2 {
+  grid-area: em;
+}
+
+.g3 {
+  grid-area: ss;
+}
+
+.g4 {
+  grid-area: bw;
+}
+
+.g5 {
+  grid-area: xy;
+}
+
+.g6 {
+  grid-area: or;
+}
+
+.g7 {
+  grid-area: sun;
+}
+
+.g-container {
+  display: grid;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  grid-template-areas:
+    "navbar navbar"
+    "em ss"
+    "bw xy"
+    "or sun";
+  grid-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.g2,
+.g3,
+.g4,
+.g5,
+.g6,
+.g7 {
+  position: relative;
+  padding: 10px;
+
+  align-self: center;
+  justify-self: center;
+  vertical-align: middle;
+}
+
+.g2:hover img,
+.g3:hover img,
+.g4:hover img,
+.g5:hover img,
+.g6:hover img,
+.g7:hover img {
+  transform: scale(1.2);
+  box-shadow: 1px 1px 3px black;
+  mix-blend-mode: color-burn;
+}
+
+.g2:hover p,
+.g3:hover p,
+.g4:hover p,
+.g5:hover p,
+.g6:hover p,
+.g7:hover p {
+  display: block;
+}
+
+.g2 p,
+.g3 p,
+.g4 p,
+.g5 p,
+.g6 p,
+.g7 p {
+  display: none;
+  position: absolute;
+  top: 20;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.g5 p {
+  top: 8;
+}
+
+.g-container > div > img {
+  width: 350px;
+  height: 200;
+}
+
+.img-container {
+  width: 100px;
+  height: 100px;
 }
