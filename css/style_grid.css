@@ -150,6 +150,10 @@
 .g7:hover img {
   transform: scale(1.2);
   box-shadow: 1px 1px 3px black;
+  -webkit-mix-blend-mode: color-burn;
+  -moz-mix-blend-mode: color-burn;
+  -o-mix-blend-mode: color-burn;
+  -ms-mix-blend-mode: color-burn;
   mix-blend-mode: color-burn;
   z-index: -1;
 }
@@ -174,7 +178,6 @@
   top: 20;
   color: rgb(255, 255, 255);
   text-align: center;
-
 }
 .g5 p {
   top: 8;
