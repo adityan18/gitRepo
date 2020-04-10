@@ -23,10 +23,10 @@ body {
   0% {
   }
   70% {
-    transform: translateY(1020px);
+    transform: translateY(1050px);
   }
   100% {
-    transform: translateY(980px);
+    transform: translateY(1000px);
     opacity: 1;
   }
 }
