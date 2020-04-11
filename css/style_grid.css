@@ -149,6 +149,7 @@
 .g6:hover img,
 .g7:hover img {
   transform: scale(1.2);
+  opacity: 0.15;
   box-shadow: 1px 1px 3px black;
   -webkit-mix-blend-mode: color-burn;
   -moz-mix-blend-mode: color-burn;
