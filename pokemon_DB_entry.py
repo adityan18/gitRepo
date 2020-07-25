@@ -5,6 +5,9 @@ import re
 from time import sleep
 import requests
 
+from page_generator import html_creator as hc
+
+
 
 conn = sqlite3.connect('Pokemon DB.sqlite')
 cur = conn.cursor()
@@ -186,7 +189,11 @@ def pokemon_table_entry():
 
         image(name[i].lower())
 
+        hc(id_text[i], name[i], gen[i], type_int[i][0], type_int[i][1], total[i], hp[i], attack[i], defence[i], sp_atk[i], sp_def[i], speed[i])
+
     conn.commit()
+
+#CALL DIRECTLY OR USE SELECT
 
 
 def image(name):
