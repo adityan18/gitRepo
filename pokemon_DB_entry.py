@@ -80,6 +80,8 @@ def json_type_creation():
     with open('types.json', 'w')as outfile:
         json.dump(type_json, outfile, indent=4)
 
+    print('type.json created')
+
 
 def type_table():
     type_json = json.load(open('types.json'))
@@ -199,7 +201,10 @@ def image(name):
 
     file.close()
 
+    print(name + 'image added')
+
 
 if __name__ == "__main__":
     table_create()
     json_type_creation()
+    type_table()
