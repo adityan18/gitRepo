@@ -1,2 +1,2 @@
 
-    if(i % 10 == 0):
+        print(i.text)
