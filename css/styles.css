@@ -97,7 +97,7 @@ table th {
   padding: 5px;
   border-radius: 5px;
   width: 90%;
-  background-color: brown;
+  background-color: rgb(165, 42, 42);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
@@ -121,7 +121,7 @@ table th {
   padding: 5px;
   border-radius: 5px;
   width: 90%;
-  background-color: grey;
+  background-color: rgb(128, 128, 128);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
