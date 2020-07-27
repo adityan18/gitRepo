@@ -6,10 +6,12 @@ from time import time
 start = time()
 
 pokemon_data = pd.read_csv('pokemon.csv', index_col='ID')
-type_color = json.load(open('types_color.json','r'))
+type_color = json.load(open('types_color.json', 'r'))
 
 
-def html_creator(name, gen, type_text, total, hp, attack, defence, sp_atk, sp_def, speed):
+def html_creator(name, gen, type_text, total,
+                 hp, attack, defence, sp_atk,
+                 sp_def, speed, prev_name, next_name):
 
     type_1 = type_text[0]
     type_2 = type_text[1]
@@ -20,7 +22,7 @@ def html_creator(name, gen, type_text, total, hp, attack, defence, sp_atk, sp_de
         text = re.sub('NAME_L', name.lower(), text)
         text = re.sub('NAME', name, text)
 
-        text = re.sub('GEN', 'Gen'+ str(gen), text)
+        text = re.sub('GEN', 'Gen' + str(gen), text)
         text = re.sub('TYPE1_L', type_1.lower(), text)
         text = re.sub('TYPE1', type_1, text)
 
@@ -40,6 +42,15 @@ def html_creator(name, gen, type_text, total, hp, attack, defence, sp_atk, sp_de
         text = re.sub('SPDEF', str(sp_def), text)
         text = re.sub('SPEED', str(speed), text)
 
+        if(name == 'Bulbasaur'):
+            text = re.sub('PREV', '<td>None</td>', text)
+        else:
+            text = re.sub('PREV', prev_next_template(prev_name), text)
+
+        if(name == 'Zarude'):
+            text = re.sub('NEXT', '<td>None</td>', text)
+        else:
+            text = re.sub('NEXT', prev_next_template(next_name), text)
 
         new_file = open('Gen' + str(gen) + '/' + name + '.html', 'w+')
 
@@ -48,14 +59,31 @@ def html_creator(name, gen, type_text, total, hp, attack, defence, sp_atk, sp_de
         new_file.write(text)
 
         new_file.truncate()
-        print('HTML Created')
+        print(name, 'html created')
 
 
+def prev_next_template(name):
+    template = '''<td>
+                <a href="NAME.html">NAME</a><br /><img
+                  src="../img/NAME_L.png"
+                  height="75"
+                  width="80"
+                />
+              </td>
+    '''
+
+    final = re.sub('NAME_L', name.lower(), template)
+    final = re.sub('NAME', name, final)
+
+    return(final)
+
+
+count = 0
 for i in range(len(pokemon_data)):
     row = pokemon_data.loc[i+1]
     name = row[0]
     gen = row[1]
-    type_text = re.findall("'(\S+)'",row[2])
+    type_text = re.findall("'(\S+)'", row[2])
     total = row[3]
     hp = row[4]
     attack = row[5]
@@ -65,10 +93,13 @@ for i in range(len(pokemon_data)):
     speed = row[9]
     prev_name = row[10]
     next_name = row[11]
-    
-    html_creator(name, gen, type_text, total, hp, attack, defence, sp_atk, sp_def, speed)
-    break
 
+    html_creator(name, gen, type_text, total, hp,
+                 attack, defence, sp_atk, sp_def,
+                 speed, prev_name, next_name)
+    if(count == 2):
+        break
+    count += 1
 
 
 stop = time()
