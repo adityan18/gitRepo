@@ -26,7 +26,7 @@ def html_creator(name, gen, type_text, total,
         text = re.sub('TYPE1_L', type_1.lower(), text)
         text = re.sub('TYPE1', type_1, text)
 
-        if(type_2 == 'null'):
+        if(type_2 == 'Null'):
             text = re.sub('<li class="TYPE2_L">TYPE2</li>', '', text)
         else:
             text = re.sub('TYPE2_L', type_2.lower(), text)
@@ -43,12 +43,14 @@ def html_creator(name, gen, type_text, total,
         text = re.sub('SPEED', str(speed), text)
 
         if(name == 'Bulbasaur'):
-            text = re.sub('PREV', '<td>None</td>', text)
+            text = re.sub('<th>Previous</th>','', text)
+            text = re.sub('PREV', '', text)
         else:
             text = re.sub('PREV', prev_next_template(prev_name), text)
 
         if(name == 'Zarude'):
-            text = re.sub('NEXT', '<td>None</td>', text)
+            text = re.sub('<th>Next</th>','', text)
+            text = re.sub('NEXT', '', text)
         else:
             text = re.sub('NEXT', prev_next_template(next_name), text)
 
@@ -76,6 +78,7 @@ def prev_next_template(name):
     final = re.sub('NAME', name, final)
 
     return(final)
+
 
 for i in range(len(pokemon_data)):
     row = pokemon_data.loc[i+1]

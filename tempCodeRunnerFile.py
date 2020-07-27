@@ -1,2 +1,1 @@
-
-    type_text = re.findall
+None
