@@ -73,7 +73,7 @@ def get_detail():
             name_y = name_x.text
             name.append(name_y)
             print(name_y)
-            # image(name_y.lower())
+            image(name_y.lower())
             i += 1
 
         elif (i % 10 == 2 and flag == False):
