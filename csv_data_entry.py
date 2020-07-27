@@ -25,27 +25,9 @@ sp_atk = []
 sp_def = []
 speed = []
 gen = []
+prev_name = []
+next_name = []
 
-# def json_type_creation():
-#     json_tag = soup('option')
-#     type_json = {}
-#     count = 0
-#     for i in json_tag:
-#         if(i.text == '- All -'):
-#             type_json_ = 'Null'
-#         else:
-#             type_json_ = i.text
-
-#         type_json[type_json_] = count
-#         count += 1
-
-#     with open('types.json', 'w')as outfile:
-#         json.dump(type_json, outfile, indent=4)
-
-#     print('types.json created')
-
-
-# json_type_creation()
 
 def get_detail():
     tag = soup('td')
@@ -91,7 +73,7 @@ def get_detail():
             name_y = name_x.text
             name.append(name_y)
             print(name_y)
-            image(name_y.lower())
+            # image(name_y.lower())
             i += 1
 
         elif (i % 10 == 2 and flag == False):
@@ -142,12 +124,28 @@ def get_detail():
                 i = 0
                 continue
             i += 1
+    prev_next(name)
+
+
+def prev_next(name_list):
+    count = 0
+
+    prev_name.append('Null')
+    for i in name_list:
+        prev_name.append(i)
+        if (count == 0):
+            count = 1
+            continue
+        next_name.append(i)
+    prev_name.pop()
+    next_name.append('Null')
 
 
 def put_csv():
     df = pd.DataFrame({'ID': id_text, 'Pokemon': name, 'Generation': gen, 'Type': type_text,
                        'Total': total, 'HP': hp, 'Attack': attack, 'Defence': defence,
-                       'Sp.Atack': sp_atk, 'Sp.Defence': sp_def, 'Speed': speed})
+                       'Sp.Atack': sp_atk, 'Sp.Defence': sp_def, 'Speed': speed,
+                       'Previos': prev_name, 'Next': next_name})
     df.to_csv('pokemon.csv', index=False, encoding='utf-8')
 
     print('CSV Done.....')
@@ -172,51 +170,3 @@ if __name__ == "__main__":
 
     end = time()
     print('Time:', end-start)
-
-
-# def type_table():
-#     type_json = json.load(open('types.json'))
-#     print('\nAdding Types\n')
-#     for element in type_json:
-#         cur.execute('''INSERT OR IGNORE INTO Type1 (ID, Type)
-#             VALUES ( ?, ?)''', (type_json[element], element))
-#         cur.execute('''INSERT OR IGNORE INTO Type2 (ID, Type)
-#             VALUES ( ?, ?)''', (type_json[element], element))
-#         print(element, 'Added')
-#     conn.commit()
-
-#     print('\nType Table Completed.....\n')
-
-#     getting_detials(type_json)
-
-
-# def getting_detials(type_json):
-#     for i in range(len(tag)):
-
-#         tag_ = str(tag[i])
-
-
-#     pokemon_table_entry()
-
-
-# def pokemon_table_entry():
-#     for i in range(len(name)):
-
-#         cur.execute('''INSERT OR IGNORE INTO Pokemon (ID, Name, Generation,Type_1, Type_2, Total, Hp, Attack, Defence, Sp_Attack, Sp_Defence, Speed)
-#             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',
-#                     (id_text[i], name[i], gen[i], type_int[i][0], type_int[i][1], total[i], hp[i], attack[i], defence[i], sp_atk[i], sp_def[i], speed[i]))
-#         print(id_text[i], name[i], 'Added')
-
-#         image(name[i].lower())
-
-#         hc(id_text[i], name[i], gen[i], type_int[i][0], type_int[i][1], total[i], hp[i], attack[i], defence[i], sp_atk[i], sp_def[i], speed[i])
-
-#     conn.commit()
-
-# #CALL DIRECTLY OR USE SELECT
-
-
-# if __name__ == "__main__":
-#     table_create()
-#     json_type_creation()
-#     type_table()

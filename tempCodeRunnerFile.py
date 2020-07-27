@@ -1,2 +1,1 @@
 
-        print(i.text)
