@@ -77,8 +77,6 @@ def prev_next_template(name):
 
     return(final)
 
-
-count = 0
 for i in range(len(pokemon_data)):
     row = pokemon_data.loc[i+1]
     name = row[0]
@@ -97,9 +95,6 @@ for i in range(len(pokemon_data)):
     html_creator(name, gen, type_text, total, hp,
                  attack, defence, sp_atk, sp_def,
                  speed, prev_name, next_name)
-    if(count == 2):
-        break
-    count += 1
 
 
 stop = time()
