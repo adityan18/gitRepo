@@ -49,6 +49,14 @@ table th {
   box-shadow: 1px 2px 2px #aaaaaa;
 }
 
+.normal {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(255, 166, 0);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
 .fire {
   padding: 5px;
   border-radius: 5px;
@@ -57,8 +65,20 @@ table th {
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
-.type {
-  color: white;
+.water {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(92, 168, 255);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.electric {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(229, 255, 0);
+  box-shadow: 3px 3px 2px #aaaaaa;
 }
 
 .grass {
@@ -69,27 +89,11 @@ table th {
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
-.ghost {
+.ice {
   padding: 5px;
   border-radius: 5px;
   width: 90%;
-  background-color: rgb(176, 39, 194);
-  box-shadow: 3px 3px 2px #aaaaaa;
-}
-
-.rock {
-  padding: 5px;
-  border-radius: 5px;
-  width: 90%;
-  background-color: rgba(192, 119, 11, 0.897);
-  box-shadow: 3px 3px 2px #aaaaaa;
-}
-
-.flying {
-  padding: 5px;
-  border-radius: 5px;
-  width: 90%;
-  background-color: rgba(73, 39, 185, 0.733);
+  background-color: rgb(0, 225, 255);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
@@ -101,11 +105,68 @@ table th {
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
-.water {
+.poison {
+  color: white;
   padding: 5px;
   border-radius: 5px;
   width: 90%;
-  background-color: rgb(92, 168, 255);
+  background-color: rgb(48, 9, 63);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.ground {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(246, 178, 67);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.flying {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgba(73, 39, 185, 0.733);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.psychic {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(255, 0, 238);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.bug {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(78, 168, 37);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.rock {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgba(192, 119, 11, 0.897);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.ghost {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(176, 39, 194);
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.dragon {
+  padding: 5px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: rgb(96, 10, 235);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
@@ -125,12 +186,16 @@ table th {
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 
-.ground {
+.fairy {
   padding: 5px;
   border-radius: 5px;
   width: 90%;
-  background-color: rgb(246, 178, 67);
+  background-color: rgb(255, 108, 248);
   box-shadow: 3px 3px 2px #aaaaaa;
+}
+
+.type {
+  color: white;
 }
 
 button {
