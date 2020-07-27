@@ -1,4 +1,4 @@
-ID,Pokemon,Generation,Type,Total,HP,Attack,Defence,Sp.Atack,Sp.Defence,Speed,Previos,Next
+ID,Pokemon,Generation,Type,Total,HP,Attack,Defence,Sp.Atack,Sp.Defence,Speed,Previous,Next
 001,Bulbasaur,1,"['Grass', 'Poison']",318,45,49,49,65,65,45,Null,Ivysaur
 002,Ivysaur,1,"['Grass', 'Poison']",405,60,62,63,80,80,60,Bulbasaur,Venusaur
 003,Venusaur,1,"['Grass', 'Poison']",525,80,82,83,100,100,80,Ivysaur,Charmander

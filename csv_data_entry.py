@@ -145,7 +145,7 @@ def put_csv():
     df = pd.DataFrame({'ID': id_text, 'Pokemon': name, 'Generation': gen, 'Type': type_text,
                        'Total': total, 'HP': hp, 'Attack': attack, 'Defence': defence,
                        'Sp.Atack': sp_atk, 'Sp.Defence': sp_def, 'Speed': speed,
-                       'Previos': prev_name, 'Next': next_name})
+                       'Previous': prev_name, 'Next': next_name})
     df.to_csv('pokemon.csv', index=False, encoding='utf-8')
 
     print('CSV Done.....')
